@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breath Analysis</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- slick-slider-links -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            background-image: url('../static/img/Dalim\ \(2\).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-position: center;
+            /* background-position: center top 60px; */
+        }
+
+        #results, #uploadForm {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+        }
+
+        .result {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .box{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding: 5% ;
+            background-color: whitesmoke ;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    <h2>Control Panel</h2>
+    <form id="fileForm" action="/start_jetson" method="post"> <!-- Added id="fileForm" here -->
+        <button type="submit">Start Script</button>
+    </form>
+    <div id="results">
+        <h1>Results</h1>
+        <div id="result2" class="result"></div>
+    </div>
+</div>
+
+    <script>
+        document.getElementById('fileForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData(this); // 'this' now correctly refers to the form
+
+            fetch('/start_jetson', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result2').textContent = data.result2; // Make sure the key matches what's returned from the server
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li class="contact-info-icon">
+                            <span><a href="#"><i class="fa-solid fa-location-dot"></i></a></span>
+                            <span>
+                                <p><a href="#">Thapar Institute of Engineering & Technology
+                                        Bhadson Rd, Adarsh Nagar, Prem Nagar, Patiala, Punjab 147004
+                                    </a></p>
+                            </span>
+                        </li>
+                        <li class="contact-info-icon">
+                            <span><a href="#"><i class="fa-solid fa-globe"></i></a></span>
+                            <span>
+                                <p><a href="#">https://www.thapar.edu</a></p>
+                            </span>
+                        </li>
+                        <li class="contact-info-icon">
+                            <span><a href="#"><i class="fa-solid fa-envelope"></i></a></span>
+                            <span>
+                                <p><a href="#"> info@thapar.edu</a></p>
+                            </span>
+                        </li>
+                        <li class="contact-info-icon">
+                            <span><a href="#"><i class="fa-solid fa-phone"></i></a></span>
+                            <span>
+                                <p><a href="#">+ (91)- 175-239 3021</a></p>
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div id="map"></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="contact-info info-details">
+                    <h2>Services</h2>
+                    <ul>
+                        <li><a href="#">Tuberculosis Test Review</a></li>
+                        <li><a href="#">X-Ray Analysis</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+</footer>
+<section class="privacy-copyright">
+    <div class="container">
+        <div class="row privacy-footer">
+            <div class="col-lg-6 col-sm-12 privacy-moblie-view">
+                <div class="privacy-text">
+                    <p> <a href="#">Privacy Policy</a> / This is a sample website - cmsmasters © 2023 / All Rights
+                        Reserved</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 text-end privacy-moblie-view">
+                <div class="company-text">
+                    <a href="#">About the company </a>
+                    <a href="#">Contact us </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+</body>
+</html>
+

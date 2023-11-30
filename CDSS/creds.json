@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "smartbreathanalyzer",
+  "private_key_id": "4c652a63c0b78b1e0fc2a54b408464ec1dada3e8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDlqOJbdjrJlQSj\n+C4bs0Svit/y3pk8mkTMi31TpWIg/9xRpsTO/21qX70oWGgqojiFawru23/FH0iM\nBA9WZ6wWvZRj3fEsXe8aJH5ZvggPtbGY2GYH38z68RJWs4LfXnGLRAKF4j0SwwDz\n+qwRLcWMmN57swdDrSpc3j9Lb1PS4HW0Lb1foQBQ7ixpw3jnZWjEUzNGEby7S4zx\n09XvGgFvFQSopfZ0zCqfd4KIrw6zOQFzTYRvFaxPcO/fGUb5CXiLc0eyL0eLCr3y\nLzDozpwOC3MC041E9+pXHiefy2LAW6i+rIZg2rNAyg8bc3gCbEn8OGxMVXCLkW4r\nI+Ma8RS1AgMBAAECggEAYKwllICBIIe061y18/0TRZ18xZxD/smlekChYct1MhTh\n5hEAOW413ZgtZMVKG+ArUKYNdRw6fXy8qguvdRywyOXGh/9N3PIxityfvyEJ/arq\n9j7pPBlODLfbk1l/Fo2H2CqpsTfZo4MobIsxUQ3mYVecF4/119wVv//hvtw++b2s\nESM+j9/h+3sh77iqOQ3NcrlybNAy42Zi4PQSDrsKRuSo68RK6BsQNaTkE6/oixEd\nc65O3HAOg7xRXI0A9M52K93lXMrGkmtnj5jxDxka38HQsfbIUIwtKbNt5v6o0JC3\nnecZ4KKs47C/7Z90NesRXICyHVotzWkBqTwwx2HSxQKBgQD+PJ4WDLCSylqCrNky\nGf1DKi0EKnWJp628j8MNiTxe3ihgIVzh7s4B5JVHI9qwS0HUnogy4/d9m9VCBHs0\nEwQ6njteEMoVNXTGC0k3CuQMJ1Ko1TSmIGP67a+Ozok96w/LN9KvIRLnzNzs+Nmd\nSeE2LDBzEGbW1v/LOrw6eaf3KwKBgQDnQKGrGYfWWJ9cZInl1O61J5xCCT1hyQX+\ntrAbP8ykzZrq9Sow40qhZahgHiCeQpvGMv15dTpPSz/ys5fCRygnB83hWLcT3f0j\n/8zsiBFjht/VrYczKy40RMMl9U4Pkjxuc65/Sfunf/AIO2I0krUMCkntnY1WjT4/\nhecdn6MznwKBgQD8dcdqD+nbqnOcpfX8aZB0fNI8+8jCDC9bOssviuLXNfaUFy07\n8j7B5HJUNYd5XxIdB9wp5PSj1/Y6W2bYvDWL3AsKCtQRoYa3DwgCT59LblUH8Mga\nW7nMuPCHeBMS2HRTkbh2TfqPEoEkFK1MIswwVks6R8RHfTJ/ZnD6BErGBwKBgQCw\nbc7qCwBnuBVdGBddEadM7nt4pjP+dq/sNNUG9RXcZkDbIVCfG8nEeRqMum+ITqkp\n/Z0FHTrvZCnVsM8HmeI4ZOveESEcNzD6Vh6yFt2tYSlEjK+pijgmCJAaVZzIpHkW\ni4uF8Zvdnu4yWZwDICqglPjyIFHExt3G+RHqt/B7YQKBgQDDPifWCkOL3kcLF3AI\nEDs4rKJ19/nWVxSzw+svRLhdupDHGcqDE23e89GHzfy9Yw58X/CUo9QDM0iCm47T\nfUqqh5DQGBqRsByvlHgFw0SgSQM4lQK5c8PHSDtKD4HWbrWkuTbN6UrsS+N43J59\nAuSHs8B595WEEWEoF/7UsNObSQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "smartbreathe@smartbreathanalyzer.iam.gserviceaccount.com",
+  "client_id": "111120207558126543967",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smartbreathe%40smartbreathanalyzer.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

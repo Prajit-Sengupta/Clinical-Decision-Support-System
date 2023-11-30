@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <!--<link rel="stylesheet" href="/static/css/styles.css">-->
+    <style>
+        body{
+            background-image: url('../static/img/background.jpeg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-position: center top 60px;
+        }
+    </style>
+</head>
+<body>
+    <header class="floating-header">
+        <nav>
+            <div class="company-logos">
+                <img src="{{ url_for('static', filename='images/thapar-logo.jpg') }}">
+                <div style="height: 120px; width: 1.5px; background-color: black; border-radius: 10px;opacity: 0.5;"></div>
+                <img src="{{ url_for('static', filename='images/icmr-logo.jpg') }}">
+                <div class="header-options">
+                  <a href="#" class="home"><b>HOME</b></a>
+                  <a href="#" class="about-us"><b>ABOUT US</b></a>
+                  <a href="#" class="contact-us"><b>CONTACT US</b></a>
+                  <a href="/index"><img src="{{ url_for('static', filename='images/login-icon.png') }}"></button></a>
+                  <a href="#"><img src="{{ url_for('static', filename='images/search-icon.svg') }}"></a>
+                </div>
+            </div>
+        </nav> 
+    </header>
+    <div class="main-container"> 
+        <h1>Login</h1>
+        
+        {% if message %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+        <form method="POST" action="/login" class="login-form">
+            <label for="username" class="required">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password" class="required">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
