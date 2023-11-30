@@ -9,7 +9,5 @@ This Flask web application is designed for a medical platform, specifically targ
 6. Image Processing for Diagnosis: The app supports uploading medical images, which are then processed using a TensorFlow model to assist in TB diagnosis.
 7. Remote Script Execution: There's a feature to execute Python scripts remotely on a Jetson device, indicating potential for IoT-based applications in the medical field. <br>
 Working of the Deep Learning Pipeline - <br>
-
-[Data Generation & Training.drawio.pdf](https://github.com/anantmehta33/Clinical-Decision-Support-System/files/13515181/Data.Generation.Training.drawio.pdf)
-
+![Data Generation   Training drawio-1](https://github.com/anantmehta33/Clinical-Decision-Support-System/assets/87894541/cd6df629-fee2-4ae2-855f-475a5dc83959)
 This application serves as an end-to-end solution for healthcare professionals managing tuberculosis, offering a range of tools from patient data management to diagnostic support, all within a secure and user-friendly web environment.
