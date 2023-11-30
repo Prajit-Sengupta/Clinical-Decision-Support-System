@@ -21,7 +21,7 @@ import pandas as pd
 app = Flask(__name__)
 app.config['MYSQL_HOST'] = 'localhost'  # Replace with your MySQL host
 app.config['MYSQL_USER'] = 'root'       # Replace with your MySQL username
-app.config['MYSQL_PASSWORD'] = 'Mysql0341@@'   # Replace with your MySQL password
+app.config['MYSQL_PASSWORD'] = ''   # Replace with your MySQL password
 app.config['MYSQL_DB'] = 'loginorregister'   # Replace with your MySQL database name
 app.config['SECRET_KEY'] = 'your_secret_key'  # Replace with your secret key for session management
 
@@ -29,8 +29,8 @@ app.config['SECRET_KEY'] = 'your_secret_key'  # Replace with your secret key for
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'gurjotsbatra@gmail.com'
-app.config['MAIL_PASSWORD'] = 'igmq hwvr rutu mmqr '
+app.config['MAIL_USERNAME'] = ''
+app.config['MAIL_PASSWORD'] = ''
 
 mail = Mail(app)
 
