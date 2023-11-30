@@ -8,6 +8,7 @@ This Flask web application is designed for a medical platform, specifically targ
 5. Email Services: Utilizing Flask-Mail, the app can send emails for OTP verification and welcome messages to new users, enhancing the user experience.
 6. Image Processing for Diagnosis: The app supports uploading medical images, which are then processed using a TensorFlow model to assist in TB diagnosis.
 7. Remote Script Execution: There's a feature to execute Python scripts remotely on a Jetson device, indicating potential for IoT-based applications in the medical field. <br>
-Working of the Deep Learning Pipeline -
+Working of the Deep Learning Pipeline - <br>
+![data_gen drawio](https://github.com/anantmehta33/Clinical-Decision-Support-System/assets/87894541/46fc7731-07e5-4546-8cc7-e1306ec2ed25)
 
 This application serves as an end-to-end solution for healthcare professionals managing tuberculosis, offering a range of tools from patient data management to diagnostic support, all within a secure and user-friendly web environment.
